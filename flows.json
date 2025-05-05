@@ -448,8 +448,61 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 420,
-        "y": 120,
+        "x": 280,
+        "y": 60,
         "wires": []
+    },
+    {
+        "id": "eaa367e6967a3312",
+        "type": "ui_toast",
+        "z": "cca3a75c4fbe546c",
+        "position": "top right",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "",
+        "x": 330,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "60d3c102c20028b8",
+        "type": "ui_template",
+        "z": "cca3a75c4fbe546c",
+        "name": "",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "format": "<div ng-bind-html=\"msg.payload\"></div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 500,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ffc10fb2d4fc19a8",
+        "type": "ui_ui_control",
+        "z": "cca3a75c4fbe546c",
+        "name": "",
+        "events": "all",
+        "x": 160,
+        "y": 180,
+        "wires": [
+            [
+                "60d3c102c20028b8"
+            ]
+        ]
     }
 ]
