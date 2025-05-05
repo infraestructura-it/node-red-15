@@ -5,9 +5,9 @@ echo "🚀 Bienvenido al instalador interactivo de Node-RED"
 # Preguntar antes de crear carpetas
 read -p "👉 ¿Querés crear la estructura del proyecto (carpetas y archivos)? [s/N]: " crear
 if [[ "$crear" =~ ^[sS]$ ]]; then
-  mkdir -p nodered-flujos/.node-red
-  mkdir -p nodered-flujos/.devcontainer
-  cd nodered-flujos || exit 1
+  mkdir -p nodered/.node-red
+  mkdir -p nodered/.devcontainer
+  cd nodered || exit 1
 
   echo "📄 Creando README.md..."
   cat <<EOF > README.md
