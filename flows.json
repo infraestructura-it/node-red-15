@@ -369,5 +369,34 @@
         "x": 360,
         "y": 200,
         "wires": []
+    },
+    {
+        "id": "f714e4fe6f33b273",
+        "type": "link out",
+        "z": "4e6934fa792d359d",
+        "name": "link out 1",
+        "mode": "link",
+        "links": [],
+        "x": 325,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "9ba5380f1e7856c3",
+        "type": "function",
+        "z": "4e6934fa792d359d",
+        "name": "function 1",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 220,
+        "y": 400,
+        "wires": [
+            []
+        ]
     }
 ]
