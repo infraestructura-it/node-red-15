@@ -16,6 +16,14 @@
         "env": []
     },
     {
+        "id": "4e6934fa792d359d",
+        "type": "tab",
+        "label": "Flujo 3",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "7585d0f859f8cc62",
         "type": "inject",
         "z": "dbe44866e8f260e3",
@@ -302,5 +310,64 @@
         "wires": [
             []
         ]
+    },
+    {
+        "id": "9908f0b2a4bb046d",
+        "type": "ui_date_picker",
+        "z": "4e6934fa792d359d",
+        "name": "",
+        "label": "date",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 230,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d18fcd77913cf658",
+        "type": "ui_dropdown",
+        "z": "4e6934fa792d359d",
+        "name": "",
+        "label": "",
+        "tooltip": "",
+        "place": "Select option",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "value": "",
+                "label": ""
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 280,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "73d73175087b1b4d",
+        "type": "ui_audio",
+        "z": "4e6934fa792d359d",
+        "name": "",
+        "voice": "",
+        "always": "",
+        "x": 360,
+        "y": 200,
+        "wires": []
     }
 ]
