@@ -565,8 +565,8 @@
         "topic": "topic",
         "topicType": "msg",
         "className": "",
-        "x": 330,
-        "y": 200,
+        "x": 470,
+        "y": 160,
         "wires": [
             []
         ]
