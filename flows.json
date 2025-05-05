@@ -101,5 +101,97 @@
         "wires": [
             []
         ]
+    },
+    {
+        "id": "8cc0de5d7c8b8289",
+        "type": "file",
+        "z": "dbe44866e8f260e3",
+        "name": "",
+        "filename": "",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 340,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e93eabbb8a38ab1c",
+        "type": "json",
+        "z": "dbe44866e8f260e3",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 210,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "016c29186e24661b",
+        "type": "csv",
+        "z": "dbe44866e8f260e3",
+        "name": "",
+        "spec": "rfc",
+        "sep": ",",
+        "hdrin": "",
+        "hdrout": "none",
+        "multi": "one",
+        "ret": "\\r\\n",
+        "temp": "",
+        "skip": "0",
+        "strings": true,
+        "include_empty_strings": "",
+        "include_null_values": "",
+        "x": 530,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "525bfa6db5533027",
+        "type": "batch",
+        "z": "dbe44866e8f260e3",
+        "name": "",
+        "mode": "count",
+        "count": 10,
+        "overlap": 0,
+        "interval": 10,
+        "allowEmptySequence": false,
+        "honourParts": false,
+        "topics": [
+            {
+                "topic": ""
+            }
+        ],
+        "x": 670,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a1cbd38fb8802db2",
+        "type": "file",
+        "z": "dbe44866e8f260e3",
+        "name": "",
+        "filename": "",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 520,
+        "y": 460,
+        "wires": [
+            []
+        ]
     }
 ]
