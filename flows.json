@@ -1,1 +1,105 @@
-[]
+[
+    {
+        "id": "dbe44866e8f260e3",
+        "type": "tab",
+        "label": "Flujo 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "7585d0f859f8cc62",
+        "type": "inject",
+        "z": "dbe44866e8f260e3",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 270,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e71ba804bd8be46c",
+        "type": "debug",
+        "z": "dbe44866e8f260e3",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 500,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "2fa9722eb03874b6",
+        "type": "complete",
+        "z": "dbe44866e8f260e3",
+        "name": "",
+        "scope": [],
+        "uncaught": false,
+        "x": 250,
+        "y": 220,
+        "wires": [
+            [
+                "e71ba804bd8be46c"
+            ]
+        ]
+    },
+    {
+        "id": "8b7226a614901f1f",
+        "type": "file in",
+        "z": "dbe44866e8f260e3",
+        "name": "",
+        "filename": "",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 330,
+        "y": 300,
+        "wires": [
+            [
+                "791374337cc8c924"
+            ]
+        ]
+    },
+    {
+        "id": "791374337cc8c924",
+        "type": "file",
+        "z": "dbe44866e8f260e3",
+        "name": "",
+        "filename": "",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 660,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    }
+]
