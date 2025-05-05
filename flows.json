@@ -32,9 +32,17 @@
         "env": []
     },
     {
-        "id": "00ee31d5e40e3252",
+        "id": "7a4170a161eae538",
         "type": "tab",
         "label": "Flujo 5",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "e8c6de84e7c50e94",
+        "type": "tab",
+        "label": "Flujo 6",
         "disabled": false,
         "info": "",
         "env": []
@@ -328,39 +336,6 @@
         ]
     },
     {
-        "id": "8792a1c2937649de",
-        "type": "udp out",
-        "z": "263667bf75617be9",
-        "name": "",
-        "addr": "",
-        "iface": "",
-        "port": "",
-        "ipv": "udp4",
-        "outport": "",
-        "base64": false,
-        "multicast": "false",
-        "x": 350,
-        "y": 440,
-        "wires": []
-    },
-    {
-        "id": "3856fc7b900483da",
-        "type": "udp in",
-        "z": "263667bf75617be9",
-        "name": "",
-        "iface": "",
-        "port": "",
-        "ipv": "udp4",
-        "multicast": "false",
-        "group": "",
-        "datatype": "buffer",
-        "x": 170,
-        "y": 380,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "9908f0b2a4bb046d",
         "type": "ui_date_picker",
         "z": "4e6934fa792d359d",
@@ -547,40 +522,76 @@
         ]
     },
     {
-        "id": "828bdad6dc2b590d",
-        "type": "mqtt in",
-        "z": "00ee31d5e40e3252",
+        "id": "03b3dda24f540169",
+        "type": "ui_form",
+        "z": "7a4170a161eae538",
         "name": "",
-        "topic": "",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 150,
-        "y": 100,
+        "label": "",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "value": "",
+                "label": "",
+                "type": "",
+                "required": true
+            }
+        ],
+        "formValue": {},
+        "payload": "",
+        "submit": "submit",
+        "cancel": "cancel",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": "",
+        "className": "",
+        "x": 330,
+        "y": 220,
         "wires": [
-            [
-                "540426a5bdb2462c"
-            ]
+            []
         ]
     },
     {
-        "id": "540426a5bdb2462c",
-        "type": "mqtt out",
-        "z": "00ee31d5e40e3252",
+        "id": "fe33d53683cf17c6",
+        "type": "ui_date_picker",
+        "z": "7a4170a161eae538",
         "name": "",
-        "topic": "",
-        "qos": "",
-        "retain": "",
-        "respTopic": "",
-        "contentType": "",
-        "userProps": "",
-        "correl": "",
-        "expiry": "",
-        "x": 270,
-        "y": 180,
-        "wires": []
+        "label": "date",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 330,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5aab3131f5e51d87",
+        "type": "ui_text_input",
+        "z": "7a4170a161eae538",
+        "name": "",
+        "label": "",
+        "tooltip": "",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 320,
+        "y": 120,
+        "wires": [
+            []
+        ]
     }
 ]
