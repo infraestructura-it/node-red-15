@@ -336,6 +336,20 @@
         ]
     },
     {
+        "id": "7aa75d13f0e7e2c4",
+        "type": "link call",
+        "z": "263667bf75617be9",
+        "name": "",
+        "links": [],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 500,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
         "id": "9908f0b2a4bb046d",
         "type": "ui_date_picker",
         "z": "4e6934fa792d359d",
