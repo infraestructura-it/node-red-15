@@ -8,6 +8,14 @@
         "env": []
     },
     {
+        "id": "263667bf75617be9",
+        "type": "tab",
+        "label": "Flujo 2",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "7585d0f859f8cc62",
         "type": "inject",
         "z": "dbe44866e8f260e3",
@@ -190,6 +198,107 @@
         "encoding": "none",
         "x": 520,
         "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0cadd3a673759049",
+        "type": "ui_slider",
+        "z": "263667bf75617be9",
+        "name": "",
+        "label": "slider",
+        "tooltip": "",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "all",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": 0,
+        "max": 10,
+        "step": 1,
+        "className": "",
+        "x": 310,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "84304fe2acf52d6c",
+        "type": "ui_text_input",
+        "z": "263667bf75617be9",
+        "name": "",
+        "label": "",
+        "tooltip": "",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 260,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4cc92dde2a6e6cbb",
+        "type": "ui_button",
+        "z": "263667bf75617be9",
+        "name": "",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "button",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 370,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "382b63521eaeca0a",
+        "type": "ui_colour_picker",
+        "z": "263667bf75617be9",
+        "name": "",
+        "label": "",
+        "format": "hex",
+        "outformat": "string",
+        "showSwatch": true,
+        "showPicker": false,
+        "showValue": false,
+        "showHue": false,
+        "showAlpha": false,
+        "showLightness": true,
+        "square": "false",
+        "dynOutput": "false",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 330,
+        "y": 340,
         "wires": [
             []
         ]
